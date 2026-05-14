@@ -1,3 +1,4 @@
+streamlit
 google-generativeai
-​python-pptx
-​markitdown
+python-pptx
+pandas
