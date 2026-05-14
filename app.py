@@ -72,8 +72,7 @@ def generate_presentation_data(data_text):
     response = model.generate_content(prompt)
     
     # Clean up the response in case Gemini includes markdown code blocks
-    cleaned_text = re.sub(r'```json\n|\n
-```|```', '', response.text).strip()
+    cleaned_text = response.text.replace("```json", "").replace("```", "").strip()
     return json.loads(cleaned_text)
 
 def create_pptx(slides_data):
