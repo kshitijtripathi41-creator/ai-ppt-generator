@@ -13,7 +13,7 @@ import tempfile
 
 # --- Configuration & Security ---
 # Ensure GEMINI_API_KEY is set in your Codespaces environment variables
-api_key = os.getenv("AIzaSyBmsSYrxPEgUgAREPqLMVgsjqZ1sDyi3zw")
+api_key = os.getenv("enterapikey")
 if not api_key:
     st.error("🚨 GEMINI_API_KEY environment variable not found. Please set it in your Codespaces environment.")
     st.stop()
